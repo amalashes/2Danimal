@@ -1,0 +1,347 @@
+// main: ../style.scss
+
+.penguin-container {
+  height: 1000px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2000;
+  top:0;
+  animation-name: spaceboots;
+    animation-duration: 20s;
+  transform-origin:50% 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.body {
+  right: 409px;
+  top: 322px;
+    width: 200px;
+    height: 350px;
+    background-color: #0F0F0F;
+    border-radius: 30% 45% 10% 50% / 60% 33% 25% 10%;
+    // position:absolute;
+    z-index: 2;
+    box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.5);
+  }
+
+  .body-inner {
+      width: 145px;
+      height: 370px;
+      background-color: white;
+      border-radius: 30% 45% 10% 50% / 60% 33% 25% 10%;
+      box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.5);
+      position:absolute;
+      z-index: 3;
+      top:310px;
+      right: 430px;
+      transform: rotate(2deg);
+    }
+
+.head {
+  width: 105px;
+  height: 110px;
+  background-color: #0F0F0F;
+  border-radius: 80% 80% 70% 70%/ 99% 90% 25% 20%;
+  box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top:200px;
+  right: 450px;
+  z-index: 5;
+}
+
+.cheek {
+  width: 25px;
+        height: 45px;
+        background-color: yellow;
+        background: linear-gradient(to top, red, yellow);
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        position: absolute;
+        top:240px;
+        right: 525px;
+        transform: rotate(10deg);
+        z-index: 6;
+}
+
+.eye {
+     width: 25px;
+     height: 20px;
+     background-color: white;
+     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+     box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.1);
+     z-index: 6;
+     position: absolute;
+     top:222px;
+     right: 498px;
+     animation: blink 2s infinite running;
+}
+
+.eye-colour {
+     width: 15px;
+     height: 15px;
+     background-color: brown;
+     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+     z-index: 6;
+     position: absolute;
+     top:225px;
+     right: 498px;
+     box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.5);
+     animation: blink 2s infinite running;
+}
+
+.eye-inner {
+     width: 10px;
+     height: 10px;
+     background-color: black;
+     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+     z-index: 7;
+     position: absolute;
+     top:230px;
+     right: 500px;
+     animation: blink 2s infinite running;
+}
+
+.eye-inner-2 {
+     width: 5px;
+     height: 5px;
+     background-color: white;
+     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+     z-index: 7;
+     position: absolute;
+     top:230px;
+     right: 500px;
+     animation: blink 2s infinite running;
+}
+
+.beak {
+  position: absolute;
+  z-index: 6;
+  top: 283px;
+  right: 440px;
+  width: 0;
+   height: 0;
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-top: 100px solid #CE7004;
+   border-radius: 50%;
+   transform: rotate(-90deg);
+   animation: beak 7s ease-in-out infinite;
+   transform-origin: 0% 0%;
+}
+
+.beak-2 {
+  position: absolute;
+  z-index: 8;
+  top:190px;
+  right: 413px;
+  width: 0;
+   height: 0;
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent;
+   border-top: 120px solid orange;
+   border-radius: 50%;
+   transform: rotate(-90deg);
+   box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.5);
+}
+
+ .beak-3 {
+   position: absolute;
+   z-index: 8;
+   top:240px;
+   right: 460px;
+   width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #CE7004;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.5);
+ }
+
+.neck-container {
+  position: absolute;
+  top: 270px;
+  right: 450px;
+  z-index: 4;
+  transform: rotate(180deg);
+}
+.neck-black {
+border-bottom: 100px solid #0F0F0F;
+border-left: 25px solid transparent;
+border-right: 50px solid transparent;
+height: 0;
+width: 70px;
+position: absolute;
+top: 270px;
+right: 430px;
+z-index: 1;
+}
+
+.neck-yellow {
+      position: relative;
+      width: 100px;
+      height: 90px;
+    }
+    .neck-yellow:before,
+    .neck-yellow:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: linear-gradient(to top, red 20%,yellow 80%);
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .neck-yellow:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+}
+
+  .left-wing {
+    width: 70px;
+    height: 300px;
+    transform: rotate(60deg);
+    background-color: #0F0F0F;
+    border-radius: 19% 90% 81% 90%;
+    position: absolute;
+    top: 340px;
+    right: 458px;
+    z-index: 0;
+    box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.5);
+    animation: l-wing 5s ease-in-out infinite;
+    transform-origin: 0% 0%;
+  }
+
+.right-wing {
+    width: 60px;
+    height: 300px;
+    transform: rotate(-45deg);
+    background-color: #0F0F0F;
+    border-radius: 19% 61% 81% 90%;
+    position: absolute;
+    top: 383px;
+    right: 403px;
+    box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.5);
+    animation: r-wing 5s ease-in-out infinite;
+    transform-origin: 0% 0%;
+  }
+
+.right-leg {
+  top: 610px;
+  right: 410px;
+        width: 90px;
+        height: 100px;
+        background-color: #0F0F0F;
+        border-radius: 50% 30% 40% 50% / 60% 60% 40% 40%;
+  position:absolute;
+  z-index: 2;
+}
+
+.left-leg {
+top: 500px;
+right: 500px;
+width: 110px;
+height: 200px;
+background-color: #0F0F0F;
+border-radius: 50% 30% 40% 60% / 60% 60% 40% 70%;
+transform: rotate(20deg);
+position:absolute;
+z-index: 2;
+}
+
+.right-foot-container {
+  position: absolute;
+  top:700px;
+  z-index: 0;
+  right: 360px;
+  animation-name: spaceboots;
+  	animation-duration: 3s;
+  transform-origin:50% 50%;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+}
+
+.right-foot {
+border-style: solid;
+border-color: transparent transparent orange transparent;
+border-width: 0 90px 50px 25px;
+height: 0px;
+width: 20px;
+}
+
+.toe-1 {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  z-index: 4;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+  border-width: 0 50px 20px 25px;
+  height: 0px;
+  width: 20px;
+}
+
+.toe-2 {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 4;
+  border-style: solid;
+  border-color: transparent transparent #CE7004 transparent;
+  border-width: 0 50px 20px 25px;
+  height: 0px;
+  width: 20px;
+}
+
+
+.left-foot-container {
+position: absolute;
+top:690px;
+z-index: 0;
+right: 540px;
+transform: scaleX(-1);
+animation-name: spaceboots2;
+  animation-duration: 5s;
+transform-origin:50% 50%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.left-foot {
+border-style: solid;
+border-color: transparent transparent orange transparent;
+border-width: 0 90px 50px 25px;
+height: 0px;
+width: 20px;
+}
+
+.toe-3 {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  z-index: 4;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+  border-width: 0 50px 20px 25px;
+  height: 0px;
+  width: 20px;
+}
+
+.toe-4 {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 4;
+  border-style: solid;
+  border-color: transparent transparent #CE7004 transparent;
+  border-width: 0 50px 20px 25px;
+  height: 0px;
+  width: 20px;
+}
